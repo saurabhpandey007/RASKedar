@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" style="text/css" href="style.css">
+<link rel="stylesheet" style="text/css" href="admin.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>New Room</title>
+</head>
+
+<body style="background-color: #d3d3d3">
+<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script type="text/javascript" src="notify.min.js"></script>
+	<script type="text/javascript" src="bootbox.min.js"></script>
+
+	<div id="room"
+		style="margin-right: 30%; height: 500px; width: 450px; padding-top: 5%;">
+
+		<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room no:&nbsp;&nbsp;&nbsp;&nbsp; <input
+				type="text" name="roomId" data-ng-model="room.roomId">
+		</pre>
+		<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building:&nbsp;&nbsp;&nbsp;&nbsp;<select
+				data-ng-model="room.building">
+										<option value="CT1">CT1</option>
+										<option value="CT2">CT2</option>
+									</select>
+		</pre>
+
+		<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select
+				data-ng-model="room.floor">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+		</pre>
+		<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No of Sensors:	<select
+				id="ddl1" onchange="configureDropDownLists(this)"
+				data-ng-model="room.noofsensors">
+										<option value="choose number" selected>choose number</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										</select>
+		</pre>
+		<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add sensors to room:	<select
+				id="ddl2"
+				onchange="populateList(this,document.getElementById('ddl3'))"
+				class="type" data-ng-model="room.sensors[0]">
+												<!-- <option value="choose type">choose type</option> -->
+												<option value="Lux">Lux</option>
+												<option value="Temperature">Temperature</option>
+												<option value="Humidity">Humidity</option>
+												<option value="Pressure">Pressure</option>
+												<option value="IR">IR</option>
+												</select>
+		</pre>
+		<center>
+
+			<center>
+				<br>
+				<select id="ddl3"
+					onchange="populateList(this,document.getElementById('ddl4'))"
+					class="type" data-ng-model="room.sensors[1]"></select>
+			</center>
+			<center>
+				<br>
+				<br>
+				<select id="ddl4"
+					onchange="populateList(this,document.getElementById('ddl5'))"
+					class="type" data-ng-model="room.sensors[2]"></select>
+			</center>
+			<center>
+				<br>
+				<br>
+				<select id="ddl5"
+					onchange="populateList(this,document.getElementById('ddl6'))"
+					class="type" data-ng-model="room.sensors[3]"></select>
+			</center>
+			<center>
+				<br>
+				<br>
+				<select id="ddl6" onchange="populateList(this)" class="type"
+					data-ng-model="room.sensors[4]"></select>
+			</center>
+
+			<br>
+			<button id="addroom" data-ng-click="ok()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add</button>
+		</center>
+	</div>
+
+
+</body>
+</html>

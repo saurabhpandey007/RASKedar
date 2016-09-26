@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" style="text/css" href="admin.css">
+<link rel="stylesheet" style="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css"> 
+<meta charset="ISO-8859-1">
+<title>view rooms</title>
+</head>
+<body style="background-color: #d3d3d3">
+	
+		<div id="viewsensor" class="input">
+		
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building:	<select
+					data-ng-model="room.building" id="selectBuilding">
+										<option value="CT1">CT1</option>
+										<option value="CT2">CT2</option>
+									</select>
+		
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor:	<select data-ng-model="room.floor" id="selectFloor">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+	
+			<button id="viewroom" data-ng-click="view()" style="margin-right: 120px;"><b>View</b></button>
+			<br/><br/>
+		</div>
+		<div id="viewsensor">
+			<h1>Room Details</h1>
+			<table class="table">
+				<thead>
+					<tr class="table">
+					<th class="table">Room</th>
+						<th class="table">Building</th>
+						<th class="table">Floor</th>
+						<th class="table">no of sensors</th>
+						<th class="table">Delete Room</th>
+					</tr>
+				</thead>
+				<tbody data-ng-repeat="room in rooms" class="table">
+					<tr>
+						<th class="table">
+							<a href="" data-ng-click="viewRoomSensorDetail(room.roomid)">{{room.roomid}}</a></th>
+						<th class="table">{{room.buildg}}</th>
+						<th class="table">{{room.floor}}</th>
+						<th class="table">{{room.noOfSensors}}</th>
+						<th class="table">
+							<a href="" data-ng-click="deletefun(room.roomid)">Delete</a>
+
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	
+</body>
+</html>

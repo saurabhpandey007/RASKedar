@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" style="text/css" href="style.css">
+<link rel="stylesheet" style="text/css" href="admin.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css">
+<meta charset="ISO-8859-1">
+<title>Add Sensor</title>
+</head>
+<body style="background-color: #d3d3d3">
+
+	
+		<div id="Edit_room">
+			<br>
+			<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:	<select
+					id="ddl2"
+					onchange="populateList(this,document.getElementById('ddl3'))"
+					class="type" data-ng-model="sensor.sensortype">
+												<!-- <option value="choose type">choose type</option> -->
+												<option value="Lux">Lux</option>
+												<option value="Temperature">Temperature</option>
+												<option value="Humidity">Humidity</option>
+												<option value="Pressure">Pressure</option>
+												</select>
+			</pre>
+			<br>
+			<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frequency: <input
+					type="text" name="nosensor" data-ng-model="sensor.frequency">
+			</pre>
+			<center>
+				<button id="edit_image" data-ng-click="edited()">Edit</button>
+			</center>
+		</div>
+	
+</body>
+</html>

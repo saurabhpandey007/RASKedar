@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css"> 
+<link rel="stylesheet" style="text/css" href="admin.css">
+<meta charset="ISO-8859-1">
+<title>Delete Room</title>
+
+</head>
+<body style="background-color: #d3d3d3">
+
+		<div id="room">
+			<br>
+			<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building: <select
+					data-ng-model="room.building">
+										<option value="CT1">CT1</option>
+										<option value="CT2">CT2</option>
+									</select>
+			</pre>
+			<br>
+
+			<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor:	<select
+					data-ng-model="room.floor">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+			</pre>
+			<br>
+			<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room no:	<input
+					type="text" name="roomId" data-ng-model="room.roomId"><br>
+			</pre>
+			<br>
+			<center>
+				<button id="deleteroom" data-ng-click="deleted()">Delete</button>
+			</center>
+		</div>
+	
+</body>
+</html>

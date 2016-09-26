@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+	<select id="ddList">
+	<option value="null" selected="selected">select room</option>
+	<option data-ng-repeat="roomid in selectRoom" value="{{roomid}}">{{roomid}}</option>
+	</select>
+	&nbsp;&nbsp;
+	<button data-ng-click="show()">ViewGraph</button>
+	<br/><br/>
+
+	<div id="curve_chart_humi" style="width: 900px; height: 500px"></div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" style="text/css" href="admin.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css"> 
+<meta charset="ISO-8859-1">
+<title>SHow Users</title>
+</head>
+<body style="background-color: #d3d3d3">
+
+		<div id="viewsensor">
+		<button style="margin-top: 40px"id="viewusers" data-ng-click = "show()"><b>View Users</b></button>
+			<h1>Users</h1>
+			<table class="table" align="center">
+				<thead>
+					<tr class="table">
+						<th class="table">User Id</th>
+						<th class="table">First Name</th>
+						<th class="table">Last Name</th>
+						<th class="table">User name</th>
+						<th class="table">Edit User</th>
+						<th class="table">Delete User</th>
+					</tr>
+				</thead>
+				<tbody data-ng-repeat="user in users" class="table">
+					<tr>
+						<th class="table">{{user.userId}}</th>
+						<th class="table">{{user.firstName}}</th>
+						<th class="table">{{user.lastName}}</th>
+						<th class="table">{{user.userName}}</th>
+						<th class="table"><a href=""
+							data-ng-click="editfunc(user)">Edit</a></th>
+						<th class="table"><a href=""
+							data-ng-click="deleteuser(user.userName,user.userId)">Delete</a></th>
+
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+</body>
+</html>

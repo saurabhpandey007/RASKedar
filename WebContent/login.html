@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" style="text/css" href="style.css">
+<meta charset="ISO-8859-1">
+<title>login</title>
+</head>
+<body style="background-color: #d3d3d3">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="notify.min.js"></script>
+	<script type="text/javascript" src="bootbox.min.js"></script>
+	
+<div id="mylogin" data-ng-app="app" data-ng-controller="login">
+	<h1>Welcome to Room Automation System</h1>
+ 	 
+ 	<div id="logindiv"> 
+ 	<form ng-submit="login()">	
+ 		<pre class="input">Username:	<input type="text" name="uname" data-ng-model = "user.userName"  ng-required="true"/><br /></pre>
+ 		<pre class="input">password:	<input type="password" name="pwd" data-ng-model = "user.password"  ng-required="true"/><br /></pre>
+ 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit"><img src="images/login.png" height="40" width="80"></button>
+ 	</form>
+ 	</div>
+ </div>
+ 	
+ <script src= "login.js">
+ 	
+ </script>
+
+</body>
+</html>

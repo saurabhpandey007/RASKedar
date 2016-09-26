@@ -1,0 +1,215 @@
+@CHARSET "ISO-8859-1";
+body 
+{
+   /*  background-image: url("images/background.jpg"); */
+   background-color: #d3d3d3;
+}
+
+h1
+{
+	text-align:center;
+	font-size : 45px;
+}
+h3{
+ margin-top: 37%;
+ font-size: 16%;
+ color:blue;
+ font-size:large;
+ font-style: italic;
+ margin-left: 80%;
+ text-decoration: none;
+ 
+ 
+}
+p
+{
+	text-align:center;
+}
+
+.box
+{
+	border : 2px solid black;
+	background : white;
+	text-align : center;
+	margin-right: 150px;
+    margin-left: 150px;
+    width : 950px;
+    height : 100px;
+}
+
+.box p
+{
+	display:block;
+      position:absolute;
+      top:45%;
+      left:10% 
+}
+.input
+{
+	/*  text-align:center;*/
+	font-size : 15px;
+	font-weight: bold;
+	/*padding-right:30px;*/
+	/*  margin-right:140px;*/
+	-moz-tab-size: 16; /* Code for Firefox */
+    -o-tab-size: 16; /* Code for Opera 10.6-12.1 */
+    tab-size: 16;
+}
+
+.table
+{
+	margin : auto;
+	margin-top : 30px;
+	text-align:center;
+	border: 1px solid green;
+	width : 600px;
+	height : 30px;
+}
+
+.table1
+{
+	text-align:center;
+	border: 1px solid green;
+	
+}
+
+
+#table1
+{
+	text-align:center;
+}
+
+#room
+{
+	/* text-align:center; */
+	border : 2px solid black;
+	margin : auto;
+	margin-top : 8px;
+    width : 400px;
+    height : 300px;
+}
+
+#login
+{
+    height: 40px;
+    width: 100px;
+   
+}
+
+#loginpage
+{
+	background-image : url("images/conference-room.jpg")
+}
+#image
+{
+	border : 2px solid Black;
+	margin-left:150px;
+	height : 700px;
+	width : 950px;
+}
+
+#mylogin
+{
+	margin : auto;
+	margin-top : 300px;
+}
+#logindiv
+{
+	text-align : center;
+	margin : auto;
+	border : 2px solid Black;
+	width : 350px;
+}
+
+#viewsensor
+{/* 
+	margin-left : 200px;
+	margin-top: 40px; */
+}
+
+#addroom
+{
+	background : DodgerBlue;
+	height: 40px;
+    width: 100px;
+}
+
+#deleteroom
+{
+	background : DodgerBlue;
+	height: 35px;
+    width: 90px;
+}
+
+#viewroom
+{
+	background : DodgerBlue;
+	height: 35px;
+    width: 90px;
+    margin-left : 500px;
+}
+
+#editroom
+{
+	text-align:center;
+	border : 2px solid black;
+	margin : auto;
+	margin-top : 300px;
+    width : 400px;
+    height : 100px;
+}
+
+#edit_image
+{
+	background : DodgerBlue;
+	height: 35px;
+    width: 90px;
+}
+
+#Edit_room
+{
+	/* text-align:center; */
+	border : 2px solid black;
+	margin : auto;
+	margin-top : 50px;
+    width : 400px;
+    height : 150px;
+}
+
+#delete_user
+{
+	text-align:center;
+	border : 2px solid black;
+	margin : auto;
+	margin-top : 50px;
+    width : 400px;
+    height : 150px;
+}
+
+#edit_user
+{
+	/* text-align:center; */
+	border : 2px solid black;
+	margin : auto;
+	margin-top : 50px;
+    width : 400px;
+    height : 240px;
+}
+
+#viewusers
+{
+	background : DodgerBlue;
+	height: 40px;
+    width: 100px;
+    margin-left : 490px;
+    margin-bottom : 40px;
+}
+.button{
+	
+	
+	float: right; 
+	font-size: 20px;
+	margin-right: 22px;
+	background-color: #aaa;
+	font-family: sans-serif; 
+}

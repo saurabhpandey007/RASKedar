@@ -1,0 +1,7 @@
+com\roomautomation\controller\UserController.class
+com\roomautomation\dao\UserDao.class
+com\roomautomation\service\PasswordEncryptionService.class
+com\roomautomation\service\UserService.class
+com\roomautomation\pojo\DummyUser.class
+com\roomautomation\pojo\User.class
+com\roomautomation\service\PasswordGeneration.class

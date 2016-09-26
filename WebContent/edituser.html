@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" style="text/css" href="admin.css">
+<link rel="stylesheet" type="text/css" href="bootmodal.css"> 
+<meta charset="ISO-8859-1">
+<title>User Edit</title>
+</head>
+<body style="background-color: #d3d3d3">
+
+	<div  id="edit_user"><br>
+	<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;User Id:	<input type="text" name="lname" data-ng-model="user.userId"></pre><br>
+	<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;First Name:	<input type="text" name="fname" data-ng-model="user.firstName"></pre><br>
+	<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;Last Name:	<input type="text" name="lname" data-ng-model="user.lastName"></pre><br>
+	<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;User Name:	<input type="text" name="lname" data-ng-model="user.userName"></pre><br>
+	<pre class="input">&nbsp;&nbsp;&nbsp;&nbsp;Role:	<select class="type" data-ng-model="user.role">
+								<option value="user">user</option>
+								<option value = "admin">admin</option></select></pre><br>
+	<center><button id="edit_image" data-ng-click="edited()">Edit</button></center>
+	</div>
+
+</body>
+</html>
